@@ -330,17 +330,17 @@ namespace Calculator
         private void DeleteTextValue()
         {
             // If we don't have a value to delete, return
-            if (this.UserInputText.Text.Length < this.UserInputText.SelectionStart + 1)
+            if (this.UserInputText.SelectionStart == 0 || (this.UserInputText.SelectionStart > this.UserInputText.TextLength))
                 return;
 
             // Remember selection start
-            var selectionStart = this.UserInputText.SelectionStart;
+            var selctionstart = this.UserInputText.SelectionStart;
 
             // Delete the character to the right of the selection
-            this.UserInputText.Text = this.UserInputText.Text.Remove(this.UserInputText.SelectionStart, 1);
+            this.UserInputText.Text = this.UserInputText.Text.Remove(this.UserInputText.SelectionStart - 1, 1);
 
             // Restore selection start
-            this.UserInputText.SelectionStart = selectionStart;
+            this.UserInputText.SelectionStart = selctionstart;
 
             // Set selection length to zero
             this.UserInputText.SelectionLength = 0;
