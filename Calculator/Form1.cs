@@ -289,10 +289,31 @@ namespace Calculator
         /// </summary>
         private void CalculateEquation()
         {
-            // TODO: finish
+            var userInput = this.UserInputText.Text;
+
+            // 3. Recursive functions
+            // 4. Switch statements
+
+            this.CalculationResultText.Text = ParseOperation();
 
             // Focus the user input text
             FocusInputText();
+        }
+
+        /// <summary>
+        /// Parses the users equasion and calculates the result
+        /// </summary>
+        /// <returns></returns>
+        private string ParseOperation()
+        {
+            try
+            {
+                throw new ArgumentNullException("Something is null");
+            }
+            catch (Exception ex)
+            {
+                return $"Invalid equation. {ex.Message}";
+            }
         }
 
         #region Private Helpers
