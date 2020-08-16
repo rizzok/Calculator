@@ -67,10 +67,10 @@
             // 
             this.UserInputText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UserInputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserInputText.Location = new System.Drawing.Point(12, 12);
+            this.UserInputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserInputText.Location = new System.Drawing.Point(12, 16);
             this.UserInputText.Name = "UserInputText";
-            this.UserInputText.Size = new System.Drawing.Size(418, 45);
+            this.UserInputText.Size = new System.Drawing.Size(418, 41);
             this.UserInputText.TabIndex = 1;
             // 
             // ButtonsPanel
